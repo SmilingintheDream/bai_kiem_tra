@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let diemLop = [7, 9, 4, 8, 6, 10, 3, 5];
+
+        // câu 1
+        let soLuong = diemLop.length;
+        console.log("Số lượng học viên trong lớp: " + soLuong);
+
+        // câu 2
+        let tongDiem = 0;
+        for (let i = 0; i < diemLop.length; i++) {
+            tongDiem += diemLop[i];
+        }
+        let diemTrungBinh = tongDiem / soLuong;
+        console.log("Tổng điểm của cả lớp: " + tongDiem);
+        console.log("Điểm trung bình của cả lớp: " + diemTrungBinh);
+
+        // câu 3
+        let diemCaoNhat = Math.max(...diemLop);
+        let diemThapNhat = Math.min(...diemLop);
+        console.log("Điểm cao nhất: " + diemCaoNhat);
+        console.log("Điểm thấp nhất: " + diemThapNhat);
+
+        // câu 4
+        let soHocVienDat = 0;
+        for (let i = 0; i < diemLop.length; i++) {
+            if (diemLop[i] >= 5) {
+                soHocVienDat++;
+            }
+        }
+        console.log("Số học viên đạt: " + soHocVienDat);
+    </script>
+</body>
+</html>
